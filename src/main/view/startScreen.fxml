@@ -1,0 +1,40 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+ <GridPane styleClass="gridPane"
+          alignment="BOTTOM_LEFT"
+          hgap="10"
+          vgap="10"
+          fx:controller="main.controller.StartScreenController"
+          xmlns:fx="http://javafx.com/fxml"
+          stylesheets="@startScreen.css"
+          >
+    <Button id="startGame"
+            text="Start Game"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            onAction="#startGame"
+            />
+    <Button id="settings"
+            text="Settings"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
+            />
+    <Button id="credits"
+            text="Credits"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
+            />
+    <Button id="quit"
+            text="Quit"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="4"
+            onAction="#handleQuit"
+            />
+    <style>
+        #startGame {
+        align: center;
+        }
+    </style>
+</GridPane>

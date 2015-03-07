@@ -1,0 +1,24 @@
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="main.controller.RandomEventController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          stylesheets="@Pirate.css"
+          hgap="10"
+          vgap="10"
+        >
+    <Text fx:id="messagePirate"
+          text="You have been attacked by pirates!"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="6"
+          stroke="white"
+            />
+    <Button fx:id="moveOn"
+            text="OK!"
+            GridPane.columnIndex="7"
+            GridPane.rowIndex="6"
+            onAction="#okRandEvent"
+            />
+</GridPane>

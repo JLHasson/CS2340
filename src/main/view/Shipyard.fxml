@@ -1,0 +1,53 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="main.controller.ShipyardController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+        >
+
+    <fx:define>
+        <ToggleGroup fx:id="selectedShip"/>
+    </fx:define>
+
+    <Text fx:id="currentMoney"
+          text="Current Money:"
+          GridPane.columnIndex="5"
+          GridPane.rowIndex="4"
+            />
+
+    <RadioButton text="Flea" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <RadioButton text="Firefly" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <RadioButton text="Mosquito" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <RadioButton text="Bumblebee" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <RadioButton text="Beetle" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <RadioButton text="Hornet" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <RadioButton text="GrassHopper" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <RadioButton text="Termite" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <RadioButton text="Wasp" toggleGroup="$selectedShip" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+
+    <Button id="BuyShip"
+            text="Buy Ship"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="10"
+            onAction="#buyShip"
+            />
+
+    <Button id="BuyGadgets"
+            text="Buy Gadgets"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="11"
+            onAction="#buyGadgets"
+            />
+
+    <Button id="Back"
+            text="Back"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="12"
+            onAction="#back"
+            />
+</GridPane>

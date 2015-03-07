@@ -1,0 +1,191 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="main.controller.PlayerConfigController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+          stylesheets="@playerConfig.css"
+        >
+    <Text id="title"
+          text="Design Your Player!"
+          GridPane.columnIndex="0"
+          GridPane.columnSpan="4"
+          GridPane.rowIndex="0"
+          fill="white"
+            />
+    <Text id="playerNameLabel"
+            text="Your Name"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            fill="white"
+            />
+    <TextField fx:id="playerName"
+                GridPane.columnIndex="1"
+                GridPane.columnSpan="4"
+                GridPane.rowIndex="1"
+            />
+
+    <!-- Begin Piloting -->
+    <Text id="pilotSkillLabel"
+          text="Piloting"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="2"
+          fill="white"
+          />
+    <Button fx:id="decreasePilotSkill"
+            text="-"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"
+            visible="false"
+            onAction="#changeSkillValue"
+            />
+    <Text fx:id="pilotSkillValue"
+          text="0"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="2"
+          fill="white"
+          />
+    <Button fx:id="increasePilotSkill"
+            text="+"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="2"
+            onAction="#changeSkillValue"
+            />
+
+    <!-- Begin Fighting -->
+    <Text id="fighterSkillLabel"
+          text="Fighting"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="3"
+          fill="white"
+            />
+    <Button fx:id="decreaseFighterSkill"
+            text="-"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="3"
+            visible="false"
+            onAction="#changeSkillValue"
+            />
+    <Text fx:id="fighterSkillValue"
+          text="0"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="3"
+          fill="white"
+            />
+    <Button fx:id="increaseFighterSkill"
+            text="+"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="3"
+            onAction="#changeSkillValue"
+            />
+
+    <!-- Begin Trading -->
+    <Text id="traderSkillLabel"
+          text="Trading"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="4"
+          fill="white"
+            />
+    <Button fx:id="decreaseTraderSkill"
+            text="-"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="4"
+            visible="false"
+            onAction="#changeSkillValue"
+            />
+    <Text fx:id="traderSkillValue"
+          text="0"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="4"
+          fill="white"
+            />
+    <Button fx:id="increaseTraderSkill"
+            text="+"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="4"
+            onAction="#changeSkillValue"
+            />
+
+    <!-- Begin Engineering -->
+    <Text id="engineerSkillLabel"
+          text="Engineering"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="5"
+          fill="white"
+            />
+    <Button fx:id="decreaseEngineerSkill"
+            text="-"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="5"
+            visible="false"
+            onAction="#changeSkillValue"
+            />
+    <Text fx:id="engineerSkillValue"
+          text="0"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="5"
+          fill="white"
+            />
+    <Button fx:id="increaseEngineerSkill"
+            text="+"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="5"
+            onAction="#changeSkillValue"
+            />
+
+    <!-- Begin Investing -->
+    <Text id="investorSkillLabel"
+          text="Investing"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="6"
+          fill="white"
+            />
+    <Button fx:id="decreaseInvestorSkill"
+            text="-"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="6"
+            visible="false"
+            onAction="#changeSkillValue"
+            />
+    <Text fx:id="investorSkillValue"
+          text="0"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="6"
+          fill="white"
+            />
+    <Button fx:id="increaseInvestorSkill"
+            text="+"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="6"
+            onAction="#changeSkillValue"
+            />
+
+    <Button id="reset"
+            text="Reset"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="7"
+            onAction="#resetValues"
+            />
+    <Text   fx:id="count"
+            text="15 Remaining"
+            GridPane.columnIndex="1"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="7"
+            fill="white"
+            />
+    <Button id="submit"
+            text="Submit"
+            GridPane.columnIndex="5"
+            GridPane.rowIndex="7"
+            onAction="#submit"
+            />
+    <Button id="back"
+            text="Back"
+            GridPane.columnIndex="4"
+            GridPane.rowIndex="7"
+            onAction="#back"
+            />
+</GridPane>

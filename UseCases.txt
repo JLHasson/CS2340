@@ -1,0 +1,65 @@
+10 Use Cases for Space Trader
+
+**Save Game -- Joel Anderson**
+Buy or Upgrade Ship and buy equipment
+Start Game
+Buy Materials (Lance Hasson)
+Travel To a Different System (Drew)
+Trading/Sell goods
+Sell stolen goods
+Buying Skills and Mercenaries -- (Ben Wilson)
+Encounters in Space
+Exchange in the Stock Exchange
+Buy planets -- Nathan Somavarapu
+Move through Turns
+Interact with/Examine ship
+
+
+What you need in your indivual use cases:
+
+Title:
+Primary Actor:
+Stakeholders:
+Precondition:
+Postcondition:
+Main Success Scenario:
+Extensions/Alternative Flows:
+
+=======
+
+(Lance Hasson)
+Buy Materials:
+Primary Actor - Space Trader
+Stakeholders - Other Traders, Planet Citizens, Intermediary (Who takes 10%)
+Precondition - The Stakeholder actually has the materials, Space Trader has enough money for the materials
+Postcondition - Space Trader receives materials and loses money, the Stakeholder loses materials and gains money
+Main Success Scenario -
+                        1. Space Trader initiates Trade
+                        2. Space Trader has enough money for the materials
+                        3. Space Trader has enough storage space in his cargo hold
+                        4. Space Trader Gains Materials and loses money
+                        5. Stakeholder loses materials and gains money
+                        6. Space Trader is returned to market
+Extensions/Alternative Flows -
+                               2a. Space Trader has insufficient funds
+                                    1. Space Trader is returned to market
+                               3a. Space Trader has no room in his cargo hold
+                                    1. Space Trader is returned to market
+                               5a. If actor buying is Intermediary
+                                    1. Space Trader gains only 90% of selling price
+                                    2. Space Trader is returned to market
+(Ben Wilson)
+Buy Skills/Mercenaries
+Primary Actor - Space Trader
+Stakeholders - Mercenaries, Skills
+Precondition - The Space Trader has money to spend
+Postcondition - Space trader receives the skills and/or mercenaries
+Main Success Scenario -
+                        1. Space Trader initiates Trade
+                        2. Space Trader has enough money for the skills/mercenaries
+                        4. Space Trader gets skills and mercenaries, and loses money
+                        5. Stakeholder gains money
+                        6. Space Trader is returned to market
+Extensions/Alternative Flows -
+                               2a. Space Trader has insufficient funds
+                                    1. Space Trader is returned to market

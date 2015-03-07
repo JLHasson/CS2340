@@ -1,0 +1,186 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="main.controller.GadgetController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+        >
+
+    <fx:define>
+        <ToggleGroup fx:id="selectedShip"/>
+    </fx:define>
+
+    <Text fx:id="currentMoney"
+          text="Current Money:"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="12"
+            />
+
+    <Text   fx:id="Good"
+            text="Good"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="0"
+            />
+    <Text   fx:id="Cart"
+            text="Cart"
+            GridPane.columnIndex="6"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="0"
+            />
+    <Text   fx:id="Price"
+            text="Price"
+            GridPane.columnIndex="12"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="0"
+            />
+    <Text   fx:id="Shields"
+            text="Shields"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="1"
+            />
+    <Button fx:id="decreaseShield"
+            text="-"
+            GridPane.columnIndex="5"
+            GridPane.rowIndex="1"
+            visible="true"
+            onAction="#changeCart"
+            />
+    <Text fx:id="shieldNum"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="1"
+            />
+    <Button fx:id="increaseShield"
+            text="+"
+            GridPane.columnIndex="7"
+            GridPane.rowIndex="1"
+            onAction="#changeCart"
+            />
+    <Text   fx:id="shieldPrice"
+            text=""
+            GridPane.columnIndex="12"
+            GridPane.rowIndex="1"
+            />
+    <Text   fx:id="Weapons"
+            text="Weapons"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="2"
+            />
+    <Button fx:id="decreaseWeapons"
+            text="-"
+            GridPane.columnIndex="5"
+            GridPane.rowIndex="2"
+            onAction="#changeCart"
+            />
+    <Text fx:id="weaponsNum"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="2"
+            />
+    <Button fx:id="increaseWeapons"
+            text="+"
+            GridPane.columnIndex="7"
+            GridPane.rowIndex="2"
+            onAction="#changeCart"
+            />
+    <Text   fx:id="weaponsPrice"
+            text=""
+            GridPane.columnIndex="12"
+            GridPane.rowIndex="2"
+            />
+    <Text   fx:id="CargoSpace"
+            text="Cargo Space"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="3"
+            />
+    <Button fx:id="decreaseCargo"
+            text="-"
+            GridPane.columnIndex="5"
+            GridPane.rowIndex="3"
+            onAction="#changeCart"
+            />
+    <Text fx:id="cargoNum"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="3"
+            />
+    <Button fx:id="increaseCargo"
+            text="+"
+            GridPane.columnIndex="7"
+            GridPane.rowIndex="3"
+            onAction="#changeCart"
+            />
+    <Text   fx:id="cargoPrice"
+            text=""
+            GridPane.columnIndex="12"
+            GridPane.rowIndex="3"
+            />
+    <Text   fx:id="IncreaseTotalHealth"
+            text="Increase Total Health Cap"
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="3"
+            GridPane.rowIndex="4"
+            />
+    <Button fx:id="decreaseHealth"
+            text="-"
+            GridPane.columnIndex="5"
+            GridPane.rowIndex="4"
+            onAction="#changeCart"
+            />
+    <Text fx:id="healthNum"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="4"
+            />
+    <Button fx:id="increaseHealth"
+            text="+"
+            GridPane.columnIndex="7"
+            GridPane.rowIndex="4"
+            onAction="#changeCart"
+            />
+    <Text   fx:id="healthPrice"
+            text=""
+            GridPane.columnIndex="12"
+            GridPane.rowIndex="4"
+            />
+    <Text fx:id="totalText"
+          text="Total Cost:"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="11"
+            />
+    <Text fx:id="totalCostText"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.columnSpan="10"
+          GridPane.rowIndex="11"
+            />
+    <Text fx:id="yourCreditsText"
+          text="0"
+          GridPane.columnIndex="6"
+          GridPane.columnSpan="10"
+          GridPane.rowIndex="12"
+            />
+    <Button fx:id="back"
+            text="Back"
+            GridPane.columnIndex="2"
+            GridPane.columnSpan="10"
+            GridPane.rowIndex="15"
+            onAction="#back"
+            />
+    <Button fx:id="completeTrade"
+            text="Complete Trade"
+            GridPane.columnIndex="8"
+            GridPane.columnSpan="10"
+            GridPane.rowIndex="15"
+            onAction="#confirm"
+            />
+
+
+</GridPane>

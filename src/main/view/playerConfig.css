@@ -1,0 +1,7 @@
+.root {
+    -fx-background-image: url("../res/playerCreationBackground.jpg");
+    -fx-background-size: cover;
+}
+.text {
+    -fx-text-fill: white;
+}
